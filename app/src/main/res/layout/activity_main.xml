@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#C0BBFD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:text="ভোট প্রদান করুন"
+            android:textAlignment="center"
+            android:textColor="#303F9F"
+            android:textSize="50dp"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:paddingRight="20dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/radioButton2"
+            android:layout_width="225dp"
+            android:layout_height="99dp"
+            android:layout_marginRight="50dp"
+            android:text="আপেল"
+            android:textSize="35dp"
+            android:onClick="onRadioButtonClicked"/>
+            android:textColor="#303F9F"/>
+
+        <ImageView
+
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/apple"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:gravity="left"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:paddingRight="20dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/radioButton5"
+            android:layout_width="225dp"
+            android:layout_height="99dp"
+            android:layout_marginRight="50dp"
+            android:text="লেবু"
+            android:textSize="35dp"
+            android:onClick="onRadioButtonClicked"/>
+            android:textColor="#303F9F"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/lemon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:gravity="left"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:paddingRight="20dp"
+
+            android:id="@+id/radioButton7"
+            android:layout_width="225dp"
+            android:layout_height="99dp"
+            android:layout_marginRight="50dp"
+            android:text="কমলালেবু"
+            android:textSize="35dp"
+            android:onClick="onRadioButtonClicked"/>
+            android:textColor="#303F9F"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/orange" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="127dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="10dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:textSize="21dp"
+
+            android:text="প্রেরণ করুন"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>
